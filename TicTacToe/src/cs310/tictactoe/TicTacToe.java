@@ -2,9 +2,9 @@ package cs310.tictactoe;
 
 public class TicTacToe {
 	
-	private Board gameBoard;
+	public Board gameBoard;
 	
-	private TicTacToe(){
+	public TicTacToe(){
 		gameBoard = new Board();
 		
 		

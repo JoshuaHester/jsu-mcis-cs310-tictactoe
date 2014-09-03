@@ -1,0 +1,15 @@
+package cs310.tictactoe;
+
+import junit.framework.TestCase;
+
+public class BoardTest extends TestCase {
+
+	public BoardTest(String name) {
+		super(name);
+	}
+
+	public void testBoard() {
+		fail("Not yet implemented");
+	}
+
+}
