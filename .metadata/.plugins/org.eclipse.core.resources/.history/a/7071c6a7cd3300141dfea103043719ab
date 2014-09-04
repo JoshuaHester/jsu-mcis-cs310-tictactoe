@@ -28,13 +28,4 @@ public class Board {
 		}
 		
 	}
-	
-	public String getMarkFromLocation(int collum, int row){
-		if(this.grid[collum][row]==GridMarker.X)
-			return "X";
-		else if(this.grid[collum][row]==GridMarker.O)
-			return "O";
-		else
-			return null;
-	}
 }

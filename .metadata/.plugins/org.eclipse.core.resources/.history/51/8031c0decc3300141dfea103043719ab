@@ -1,0 +1,11 @@
+package cs310.tictactoe;
+
+import junit.framework.TestCase;
+
+public class TicTacToeTest extends TestCase {
+
+	public TicTacToeTest(String name) {
+		super(name);
+	}
+
+}

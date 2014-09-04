@@ -1,14 +1,12 @@
 package cs310.tictactoe;
 
 
-import org.junit.Test;
-
 import cs310.tictactoe.Board.GridMarker;
 import junit.framework.TestCase;
 
 public class BoardTest extends TestCase {
 
-	@Test
+	
 	public void testNewBoardShouldBeBlank() {
 		Board testBoard = new Board();
 		for(int collum=0;collum<2;collum++)

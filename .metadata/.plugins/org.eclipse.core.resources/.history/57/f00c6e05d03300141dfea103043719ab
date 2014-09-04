@@ -1,0 +1,17 @@
+package cs310.tictactoe;
+
+import cs310.tictactoe.Board.GridMarker;
+import junit.framework.TestCase;
+
+public class TicTacToeTest extends TestCase {
+
+	public void testPlacingTicShouldAddTicToBoard(){
+		TicTacToe testGame = new TicTacToe();
+		testGame.markLocation(0,0,'X');
+		assertTrue(testGame.getMarker(0,0).equals('X'));
+		testGame.markLocation(0,1,'O');
+		assertTrue(testGame.getMarker(0,1).equals('O'));
+	}
+	
+
+}

@@ -23,12 +23,8 @@ public class TicTacToe {
 
 
 	public char getMarker(int collum, int row) {
-		String locationContents = gameBoard.getMarkFromLocation(collum, row);
-		if(locationContents=="X")
-			return 'X';
-		else if(locationContents=="O")
-			return 'O';
-		else
-			return ' ';
+		
+		
+		
 	}
 }
