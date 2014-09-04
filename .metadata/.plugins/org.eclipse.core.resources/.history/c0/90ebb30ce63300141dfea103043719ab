@@ -25,7 +25,6 @@ public class TicTacToeTest extends TestCase {
 		assertSame(testGame.getWinner(), "Player 1");
 	}
 	
-	@Test
 	public void testGameShouldBeLosable(){
 		TicTacToe testGame = new TicTacToe();
 		testGame.markLocation(0,0,'X');
@@ -38,14 +37,5 @@ public class TicTacToeTest extends TestCase {
 		testGame.markLocation(2,1,'X');
 		testGame.markLocation(2,2,'O');
 		assertSame(testGame.getWinner(), "Cat");
-	}
-	
-	@Test
-	public void testShouldNotBeAbleToOverwriteTics(){
-		TicTacToe testGame = new TicTacToe();
-		testGame.markLocation(0,0,'X');
-		testGame.markLocation(0,0,'O');
-		assertSame(testGame.getMarker(0,0), 'X');
-		
 	}
 }

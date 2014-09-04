@@ -12,7 +12,7 @@ public class TicTacToe {
 
 	public void markLocation(int collum,int row, char mark){
 		if(getMarker(collum, row)==' ')
-		gameBoard.setMarkOnBoard(collum, row, mark);
+		 gameBoard.setMarkOnBoard(collum, row, mark);
 	}
 	
 	public char getMarker(int collum, int row) {
@@ -59,7 +59,7 @@ public class TicTacToe {
 		int slotCount=0;	
 		for(int collum=0;collum<3;collum++){
 			for(int row=0;row<3;row++){
-				if(getMarker(collum,row)!=' '){
+				if(getMarker(collum,row)==' '){
 					slotCount++;
 				}
 			}
