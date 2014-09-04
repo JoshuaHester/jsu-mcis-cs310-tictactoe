@@ -11,15 +11,17 @@ public class Board {
 		MakeBoardBlank();
 	}
 	
+	
+	
 	public void MakeBoardBlank(){
-		for(int collum=0;collum<2;collum++){
+		for(int collum=0;collum<2;collum++)
+		{
 			for(int row=0;row<2;row++){
 				this.grid[collum][row]=GridMarker.BLANK;
+				
 			}
+			
 		}
 	}
 
-	
-	
-	
 }

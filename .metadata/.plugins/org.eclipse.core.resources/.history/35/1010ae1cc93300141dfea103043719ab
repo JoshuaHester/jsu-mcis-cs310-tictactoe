@@ -15,10 +15,8 @@ public class BoardTest extends TestCase {
 				assertTrue(testBoard.grid[collum][row].equals(GridMarker.BLANK));  
 				
 			}
+			
 		}
 	}
-	
-	
-	
 
 }
