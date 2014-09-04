@@ -20,12 +20,13 @@ public class Board {
 	}
 
 	public void setMarkOnBoard(int collum, int row, char mark){
-			if(mark=='X'||mark=='x'){
-				this.grid[collum][row]=GridMarker.X;
-			}
-			else{
-				this.grid[collum][row]=GridMarker.O;
-			}
+		if(mark=='X'||mark=='x'){
+			this.grid[collum][row]=GridMarker.X;
+		}
+		else{
+			this.grid[collum][row]=GridMarker.O;
+		}
+		
 	}
 	
 	public String getMarkFromLocation(int collum, int row){
@@ -36,9 +37,4 @@ public class Board {
 		else
 			return null;
 	}
-	
-	
-	
-	
-	
 }

@@ -16,13 +16,5 @@ public class TicTacToeTest extends TestCase {
 		assertSame(testGame.getMarker(0,2), ' ');
 	}
 	
-	@Test
-	public void testGameShouldBeWinable(){
-		TicTacToe testGame = new TicTacToe();
-		testGame.markLocation(0,0,'X');
-		testGame.markLocation(0,1,'X');
-		testGame.markLocation(0,2,'X');
-		assertSame(testGame.getWinner(), "Player 1");
-	}
-	
+
 }
