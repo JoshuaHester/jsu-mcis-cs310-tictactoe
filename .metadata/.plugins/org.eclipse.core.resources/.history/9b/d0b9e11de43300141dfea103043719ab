@@ -56,11 +56,10 @@ public class TicTacToe {
 	
 	public boolean checkForCat(){
 		int slotCount=0;	
-		for(int collum=0;collum<3;collum++){
-			for(int row=0;row<3;row++){
-				if(getMarker(collum,row)=='X'||getMarker(collum,row)=='O'){
+		for(int collum=0;collum<2;collum++){
+			for(int row=0;row<2;row++){
+				if(getMarker(collum,row)!=' ')
 					slotCount++;
-				}
 			}
 		}
 		if(slotCount==9)
@@ -72,4 +71,6 @@ public class TicTacToe {
 	public static void main(String[] args){
 		new TicTacToe();
 	}
+
+	
 }

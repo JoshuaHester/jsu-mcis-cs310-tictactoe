@@ -31,7 +31,7 @@ public class TicTacToe {
 			return "Player 2";
 		else if(checkForCat())
 				return "Cat";
-		else return null;
+//		else return null;
 	}
 	
 	public boolean checkForVictory(char Tic){
@@ -56,8 +56,8 @@ public class TicTacToe {
 	
 	public boolean checkForCat(){
 		int slotCount=0;	
-		for(int collum=0;collum<3;collum++){
-			for(int row=0;row<3;row++){
+		for(int collum=0;collum<2;collum++){
+			for(int row=0;row<2;row++){
 				if(getMarker(collum,row)=='X'||getMarker(collum,row)=='O'){
 					slotCount++;
 				}
