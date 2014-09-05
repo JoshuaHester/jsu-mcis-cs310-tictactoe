@@ -32,7 +32,8 @@ public class TicTacToe {
 			try {
 				gameBoard.setMarkOnBoard(collum, row, mark);
 			} catch (Exception e) {
-				
+				// TODO Auto-generated catch block
+//				e.printStackTrace();
 			}
 	}
 	
@@ -44,7 +45,8 @@ public class TicTacToe {
 		else if(gameBoard.getMarkFromLocation(collum, row)==Board.GridMarker.O)
 			return Board.GridMarker.O;
 		} catch (Exception e) {
-			
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		return Board.GridMarker.BLANK;
 		
@@ -76,11 +78,11 @@ public class TicTacToe {
 			return true;
 		else if(getTicMark(2, 0)==Tic&&getTicMark(2, 1)==Tic&&getTicMark(2, 2)==Tic)
 			return true;
-		else if(getTicMark(0, 1)==Tic&&getTicMark(1, 1)==Tic&&getTicMark(2, 1)==Tic)
-			return true;
-		else if(getTicMark(0, 2)==Tic&&getTicMark(1, 2)==Tic&&getTicMark(2, 2)==Tic)
-			return true;
 		else if(getTicMark(0, 0)==Tic&&getTicMark(1, 0)==Tic&&getTicMark(2, 0)==Tic)
+			return true;
+		else if(getTicMark(1, 0)==Tic&&getTicMark(1, 1)==Tic&&getTicMark(1, 2)==Tic)
+			return true;
+		else if(getTicMark(2, 0)==Tic&&getTicMark(2, 1)==Tic&&getTicMark(2, 2)==Tic)
 			return true;
 		else if(getTicMark(0, 0)==Tic&&getTicMark(1, 1)==Tic&&getTicMark(2, 2)==Tic)
 			return true;

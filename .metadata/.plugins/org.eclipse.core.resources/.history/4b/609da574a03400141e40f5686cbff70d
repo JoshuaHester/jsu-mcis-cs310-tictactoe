@@ -32,7 +32,8 @@ public class TicTacToe {
 			try {
 				gameBoard.setMarkOnBoard(collum, row, mark);
 			} catch (Exception e) {
-				
+				// TODO Auto-generated catch block
+//				e.printStackTrace();
 			}
 	}
 	
@@ -44,7 +45,8 @@ public class TicTacToe {
 		else if(gameBoard.getMarkFromLocation(collum, row)==Board.GridMarker.O)
 			return Board.GridMarker.O;
 		} catch (Exception e) {
-			
+			// TODO Auto-generated catch block
+//			e.printStackTrace();
 		}
 		return Board.GridMarker.BLANK;
 		
