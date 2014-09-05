@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TicTacToeTest" project="TicTacToe" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="cs310.tictactoe.TicTacToeTest" time="0.003">
+    <testcase name="testShouldNotBeAbleToOverwriteTics" classname="cs310.tictactoe.TicTacToeTest" time="0.0"/>
+    <testcase name="testGameShouldBeLosable" classname="cs310.tictactoe.TicTacToeTest" time="0.0"/>
+    <testcase name="testNewBoardShouldBeBlank" classname="cs310.tictactoe.TicTacToeTest" time="0.0"/>
+    <testcase name="testShouldNotBeAbleToExceedBounds" classname="cs310.tictactoe.TicTacToeTest" time="0.0"/>
+    <testcase name="testPlacingTicShouldAddCorrectTicToLocation" classname="cs310.tictactoe.TicTacToeTest" time="0.0"/>
+    <testcase name="testNewGameShouldBeBlank" classname="cs310.tictactoe.TicTacToeTest" time="0.0"/>
+    <testcase name="testGameShouldBeWinable" classname="cs310.tictactoe.TicTacToeTest" time="0.001"/>
+  </testsuite>
+</testrun>

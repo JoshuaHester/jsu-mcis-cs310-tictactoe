@@ -15,7 +15,7 @@ public class TicTacToe {
 				return "Player 2";
 			else if(this==CAT)
 				return "Cat";
-			else return " ";
+			else return null;
 			
 		}
 		
@@ -23,11 +23,16 @@ public class TicTacToe {
 	
 	public TicTacToe(){
 		gameBoard = new Board();
-		
-		
 	}
 
 	public void markLocation(int collum,int row, char mark){
+		if(mark=='X'||mark=='x')
+			placeTic(collum,row, Board.GridMarker.X);
+		else
+			placeTic(collum,row, Board.GridMarker.O);
+	}
+	
+	public void placeTic(int collum,int row, Board.GridMarker mark){
 		if(getTicMark(collum, row)==Board.GridMarker.BLANK)
 			try {
 				gameBoard.setMarkOnBoard(collum, row, mark);
@@ -104,7 +109,13 @@ public class TicTacToe {
 			return false;
 	}
 	
-	public static void main(String[] args){
-		new TicTacToe();
+	public void clearBoard() {
+		gameBoard.makeBoardBlank();
 	}
+	
+	public static void main(String[] args){
+		new Runner();
+	}
+
+	
 }

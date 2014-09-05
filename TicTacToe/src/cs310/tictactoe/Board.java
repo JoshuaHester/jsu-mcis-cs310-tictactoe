@@ -30,10 +30,10 @@ public class Board {
 		}
 	}
 
-	public void setMarkOnBoard(int collum, int row, char mark) throws Exception{
+	public void setMarkOnBoard(int collum, int row, GridMarker mark) throws Exception{
 			if(collum>2||collum<0||row>2||row<0)
 				throw OutOfBoundsException;
-			else if(mark=='X'||mark=='x'){
+			else if(mark==GridMarker.X){
 				this.grid[collum][row]=GridMarker.X;
 			}
 			else{

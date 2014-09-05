@@ -1,0 +1,14 @@
+package cs310.tictactoe;
+
+public class Runner {
+	public TicTacToe game;
+	
+	public Runner(){
+		game = new TicTacToe();
+	}
+	
+	
+	
+	
+
+}

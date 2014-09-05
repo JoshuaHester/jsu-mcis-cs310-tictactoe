@@ -19,6 +19,21 @@ public class TicTacToeTest extends TestCase {
 		}
 	}
 	
+	@Test
+	public void testNewGameShouldBeBlank() throws Exception {
+		TicTacToe testGame = new TicTacToe();
+		testGame.markLocation(0,0,'X');
+		testGame.markLocation(0,1,'X');
+		testGame.markLocation(0,2,'X');
+		testGame.clearBoard();
+		for(int collum=0;collum<2;collum++)
+		{
+			for(int row=0;row<2;row++){
+				assertTrue(testGame.getTicMark(collum,row).equals(GridMarker.BLANK));  
+				
+			}
+		}
+	}
 	
 	@Test
 	public void testPlacingTicShouldAddCorrectTicToLocation(){
@@ -106,16 +121,34 @@ public class TicTacToeTest extends TestCase {
 	public void testShouldNotBeAbleToExceedBounds(){
 		try{
 			TicTacToe testGame = new TicTacToe();
-			testGame.gameBoard.setMarkOnBoard(0,-1,'X');
+			testGame.gameBoard.setMarkOnBoard(0,-1,Board.GridMarker.X);
 			fail();
 		}catch (Exception e) {}
 		try{
 			TicTacToe testGame = new TicTacToe();
-			testGame.gameBoard.setMarkOnBoard(3,1,'X');
+			testGame.gameBoard.setMarkOnBoard(3,1,Board.GridMarker.X);
 			fail();
 		}catch (Exception e) {}
 	}
+/*	
+	public void testPlayersShouldAlternateAfterMoves(){
+		Runner testGame = new Runner();
+		
+		assertEquals(TicTacToe.Player.PLAYER_1, testGame.player);
+		testGame.makeMove(0,1);
+		assertEquals(TicTacToe.Player.PLAYER_2, testGame.player);
+		testGame.setWinner(TicTacToe.Player.PLAYER_1);
+	}
 	
+	public void testRunnerShouldPlaceTics(){
+		Runner testGame = new Runner();
+		testGame.makeMove(0, 0);
+		try {
+			assertEquals(testGame.game.gameBoard.getMarkFromLocation(0,0), Board.GridMarker.X);
+		} catch (Exception e) {}
+		
+	}
 	
-
+*/	
+	
 }
