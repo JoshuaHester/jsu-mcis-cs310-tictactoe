@@ -4,6 +4,23 @@ public class TicTacToe {
 	
 	public Board gameBoard;
 	
+	public enum Player{
+		PLAYER_1, 
+		PLAYER_2, 
+		CAT;
+		public String toString(){
+			if(this==PLAYER_1)
+				return "Player 1";
+			else if(this==PLAYER_2)
+				return "Player 2";
+			else if(this==CAT)
+				return "Cat";
+			else return " ";
+			
+		}
+		
+	}
+	
 	public TicTacToe(){
 		gameBoard = new Board();
 		
@@ -11,55 +28,74 @@ public class TicTacToe {
 	}
 
 	public void markLocation(int collum,int row, char mark){
-		if(getMarker(collum, row)==' ')
-		gameBoard.setMarkOnBoard(collum, row, mark);
+		if(getTicMark(collum, row)==Board.GridMarker.BLANK)
+			try {
+				gameBoard.setMarkOnBoard(collum, row, mark);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+//				e.printStackTrace();
+			}
 	}
 	
-	public char getMarker(int collum, int row) {
-		String locationContents = gameBoard.getMarkFromLocation(collum, row);
-		if(locationContents=="X")
-			return 'X';
-		else if(locationContents=="O")
-			return 'O';
-		else
-			return ' ';
+	public Board.GridMarker getTicMark(int collum, int row) {
+		try {
+		if(gameBoard.getMarkFromLocation(collum, row)==Board.GridMarker.X)
+			return Board.GridMarker.X;
+		
+		else if(gameBoard.getMarkFromLocation(collum, row)==Board.GridMarker.O)
+			return Board.GridMarker.O;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return Board.GridMarker.BLANK;
+		
 	}
 	
-	public String getWinner(){
-		if(checkForVictory('X')) 
-			return "Player 1";
-		else if(checkForVictory('O')) 
-			return "Player 2";
+	public String getMarker(int collum, int row){
+		return getTicMark(collum, row).toString();
+	}
+	
+	public Player getGameWinner(){
+		if(checkForVictory(Board.GridMarker.X)) 
+			return Player.PLAYER_1;
+		else if(checkForVictory(Board.GridMarker.O)) 
+			return Player.PLAYER_2;
 		else if(checkForCat())
-				return "Cat";
+				return Player.CAT;
 		else return null;
 	}
 	
-	public boolean checkForVictory(char Tic){
-		if(getMarker(0, 0)==Tic&&getMarker(0, 1)==Tic&&getMarker(0, 2)==Tic)
+	public String getWinner(){
+		return getGameWinner().toString();
+	}
+	
+	
+	private boolean checkForVictory(Board.GridMarker Tic){
+		if(getTicMark(0, 0)==Tic&&getTicMark(0, 1)==Tic&&getTicMark(0, 2)==Tic)
 			return true;
-		else if(getMarker(1, 0)==Tic&&getMarker(1, 1)==Tic&&getMarker(1, 2)==Tic)
+		else if(getTicMark(1, 0)==Tic&&getTicMark(1, 1)==Tic&&getTicMark(1, 2)==Tic)
 			return true;
-		else if(getMarker(2, 0)==Tic&&getMarker(2, 1)==Tic&&getMarker(2, 2)==Tic)
+		else if(getTicMark(2, 0)==Tic&&getTicMark(2, 1)==Tic&&getTicMark(2, 2)==Tic)
 			return true;
-		else if(getMarker(0, 0)==Tic&&getMarker(1, 0)==Tic&&getMarker(2, 0)==Tic)
+		else if(getTicMark(0, 0)==Tic&&getTicMark(1, 0)==Tic&&getTicMark(2, 0)==Tic)
 			return true;
-		else if(getMarker(1, 0)==Tic&&getMarker(1, 1)==Tic&&getMarker(1, 2)==Tic)
+		else if(getTicMark(1, 0)==Tic&&getTicMark(1, 1)==Tic&&getTicMark(1, 2)==Tic)
 			return true;
-		else if(getMarker(2, 0)==Tic&&getMarker(2, 1)==Tic&&getMarker(2, 2)==Tic)
+		else if(getTicMark(2, 0)==Tic&&getTicMark(2, 1)==Tic&&getTicMark(2, 2)==Tic)
 			return true;
-		else if(getMarker(0, 0)==Tic&&getMarker(1, 1)==Tic&&getMarker(2, 2)==Tic)
+		else if(getTicMark(0, 0)==Tic&&getTicMark(1, 1)==Tic&&getTicMark(2, 2)==Tic)
 			return true;
-		else if(getMarker(2, 0)==Tic&&getMarker(1, 1)==Tic&&getMarker(0, 2)==Tic)
+		else if(getTicMark(2, 0)==Tic&&getTicMark(1, 1)==Tic&&getTicMark(0, 2)==Tic)
 			return true;
 		else return false;
 	}
 	
-	public boolean checkForCat(){
+	private boolean checkForCat(){
 		int slotCount=0;	
 		for(int collum=0;collum<3;collum++){
 			for(int row=0;row<3;row++){
-				if(getMarker(collum,row)!=' '){
+				if(getTicMark(collum,row)!=Board.GridMarker.BLANK){
 					slotCount++;
 				}
 			}
