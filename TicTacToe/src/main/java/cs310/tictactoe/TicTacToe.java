@@ -1,4 +1,4 @@
-package cs310.tictactoe;
+//package cs310.tictactoe;
 
 public class TicTacToe {
 	
@@ -142,9 +142,9 @@ public class TicTacToe {
 	public static void main(String[] args){
 		TicTacToe game = new TicTacToe();
 		Player player = Player.PLAYER_1;
-		Player winner = null;
+//		Player winner = null;
 		Interface input = new Interface(game);
-		
+		/*
 		input.printBoard();
 		while(winner!=Player.PLAYER_1&&winner!=Player.PLAYER_2&&winner!=Player.CAT){
 			int collum =input.getCollum();
@@ -159,7 +159,7 @@ public class TicTacToe {
 		input.printWinner(winner);
 		game.clearBoard();
 		player=TicTacToe.Player.PLAYER_1;
-		
+		*/
 	}
 
 	
