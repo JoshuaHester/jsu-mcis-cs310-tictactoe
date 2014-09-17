@@ -1,6 +1,6 @@
-import cs310.tictactoe.*;
+import edu.jsu.mcis.TicTacToeGame.*;
 
-public class TicTacToeKeywords {
+public class TicTacToeKeywordsGUI {
 	private TicTacToe game = new TicTacToe();
 	
 	public void startNewGame(){

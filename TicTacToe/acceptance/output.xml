@@ -1,811 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 2.8.5 (Jython 2.5.3 on java1.8.0_05)" generated="20140916 21:10:20.241">
-<suite source="C:\Users\Joshua\Desktop\jsu-mcis-cs310-tictactoe\TicTacToe\acceptance\TicTacToeTests.txt" name="TicTacToeTests" id="s1">
-<test name="Win Diagonally as X" id="s1-t1">
-<kw type="kw" name="TicTacToeKeywords.Start New Game">
+<robot generator="Robot 2.8.5 (Jython 2.5.3 on java1.8.0_05)" generated="20140917 18:43:15.075">
+<suite source="C:\Users\Joshua\Documents\GitHub\jsu-mcis-cs310-tictactoe\TicTacToe\acceptance\TicTacToeGUITests.txt" name="TicTacToeGUITests" id="s1">
+<test name="Win Main Diagonally as X" id="s1-t1">
+<kw type="kw" name="Start New Game">
 <doc></doc>
 <arguments>
 </arguments>
-<status endtime="20140916 21:10:20.778" starttime="20140916 21:10:20.773" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
+<kw type="kw" name="Start Application">
 <doc></doc>
 <arguments>
-<arg>1</arg>
-<arg>1</arg>
+<arg>edu.jsu.mcis.TicTacToeGame</arg>
 </arguments>
-<status endtime="20140916 21:10:20.784" starttime="20140916 21:10:20.780" status="PASS"></status>
+<msg level="FAIL" timestamp="20140917 18:43:15.883">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 18:43:15.884" starttime="20140917 18:43:15.879" status="FAIL"></status>
 </kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>1</arg>
-<arg>1</arg>
-<arg>X</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:20.799">${loc} = X</msg>
-<status endtime="20140916 21:10:20.798" starttime="20140916 21:10:20.794" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:20.807">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:20.810" starttime="20140916 21:10:20.802" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:20.813" starttime="20140916 21:10:20.786" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>1</arg>
-</arguments>
-<status endtime="20140916 21:10:20.819" starttime="20140916 21:10:20.815" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>1</arg>
-<arg>O</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:20.836">${loc} = O</msg>
-<status endtime="20140916 21:10:20.835" starttime="20140916 21:10:20.830" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:20.844">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:20.846" starttime="20140916 21:10:20.839" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:20.847" starttime="20140916 21:10:20.822" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>0</arg>
-</arguments>
-<status endtime="20140916 21:10:20.853" starttime="20140916 21:10:20.849" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>0</arg>
-<arg>X</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:20.870">${loc} = X</msg>
-<status endtime="20140916 21:10:20.869" starttime="20140916 21:10:20.863" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:20.878">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:20.880" starttime="20140916 21:10:20.871" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:20.883" starttime="20140916 21:10:20.855" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>2</arg>
-</arguments>
-<status endtime="20140916 21:10:20.889" starttime="20140916 21:10:20.885" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>2</arg>
-<arg>O</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:20.904">${loc} = O</msg>
-<status endtime="20140916 21:10:20.903" starttime="20140916 21:10:20.898" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:20.911">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:20.913" starttime="20140916 21:10:20.906" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:20.914" starttime="20140916 21:10:20.891" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>2</arg>
-<arg>2</arg>
-</arguments>
-<status endtime="20140916 21:10:20.920" starttime="20140916 21:10:20.917" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>2</arg>
-<arg>2</arg>
-<arg>X</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:20.933">${loc} = X</msg>
-<status endtime="20140916 21:10:20.932" starttime="20140916 21:10:20.927" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:20.939">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:20.941" starttime="20140916 21:10:20.935" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:20.943" starttime="20140916 21:10:20.921" status="PASS"></status>
-</kw>
-<kw type="kw" name="Winner Should Be">
-<doc></doc>
-<arguments>
-<arg>X</arg>
-</arguments>
-<kw type="kw" name="${result} = TicTacToeKeywords.Get Winner">
-<doc></doc>
-<arguments>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:20.959">${result} = X</msg>
-<status endtime="20140916 21:10:20.957" starttime="20140916 21:10:20.954" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${result}</arg>
-<arg>${winner}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:20.966">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:20.968" starttime="20140916 21:10:20.961" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:20.970" starttime="20140916 21:10:20.947" status="PASS"></status>
+<status endtime="20140917 18:43:15.887" starttime="20140917 18:43:15.868" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20140916 21:10:20.976" starttime="20140916 21:10:20.763" status="PASS"></status>
+<status critical="yes" endtime="20140917 18:43:15.890" starttime="20140917 18:43:15.859" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
-<test name="Win Horizontally as O" id="s1-t2">
-<kw type="kw" name="TicTacToeKeywords.Start New Game">
+<test name="Win Reverse Diagonally as O" id="s1-t2">
+<kw type="kw" name="Start New Game">
 <doc></doc>
 <arguments>
 </arguments>
-<status endtime="20140916 21:10:20.994" starttime="20140916 21:10:20.991" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
+<kw type="kw" name="Start Application">
 <doc></doc>
 <arguments>
-<arg>1</arg>
-<arg>1</arg>
+<arg>edu.jsu.mcis.TicTacToeGame</arg>
 </arguments>
-<status endtime="20140916 21:10:21.000" starttime="20140916 21:10:20.997" status="PASS"></status>
+<msg level="FAIL" timestamp="20140917 18:43:15.917">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 18:43:15.918" starttime="20140917 18:43:15.914" status="FAIL"></status>
 </kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>1</arg>
-<arg>1</arg>
-<arg>X</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.019">${loc} = X</msg>
-<status endtime="20140916 21:10:21.018" starttime="20140916 21:10:21.013" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.028">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.029" starttime="20140916 21:10:21.023" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.031" starttime="20140916 21:10:21.007" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>2</arg>
-<arg>0</arg>
-</arguments>
-<status endtime="20140916 21:10:21.037" starttime="20140916 21:10:21.034" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>2</arg>
-<arg>0</arg>
-<arg>O</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.053">${loc} = O</msg>
-<status endtime="20140916 21:10:21.052" starttime="20140916 21:10:21.047" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.059">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.061" starttime="20140916 21:10:21.055" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.063" starttime="20140916 21:10:21.040" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>0</arg>
-</arguments>
-<status endtime="20140916 21:10:21.069" starttime="20140916 21:10:21.065" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>0</arg>
-<arg>X</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.083">${loc} = X</msg>
-<status endtime="20140916 21:10:21.083" starttime="20140916 21:10:21.078" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.109">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.111" starttime="20140916 21:10:21.085" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.114" starttime="20140916 21:10:21.072" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>2</arg>
-<arg>2</arg>
-</arguments>
-<status endtime="20140916 21:10:21.136" starttime="20140916 21:10:21.118" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>2</arg>
-<arg>2</arg>
-<arg>O</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.165">${loc} = O</msg>
-<status endtime="20140916 21:10:21.164" starttime="20140916 21:10:21.155" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.176">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.178" starttime="20140916 21:10:21.169" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.180" starttime="20140916 21:10:21.139" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>2</arg>
-</arguments>
-<status endtime="20140916 21:10:21.200" starttime="20140916 21:10:21.190" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>2</arg>
-<arg>X</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.220">${loc} = X</msg>
-<status endtime="20140916 21:10:21.219" starttime="20140916 21:10:21.212" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.229">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.231" starttime="20140916 21:10:21.223" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.233" starttime="20140916 21:10:21.203" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>2</arg>
-<arg>1</arg>
-</arguments>
-<status endtime="20140916 21:10:21.238" starttime="20140916 21:10:21.235" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>2</arg>
-<arg>1</arg>
-<arg>O</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.251">${loc} = O</msg>
-<status endtime="20140916 21:10:21.250" starttime="20140916 21:10:21.246" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.257">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.258" starttime="20140916 21:10:21.253" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.260" starttime="20140916 21:10:21.239" status="PASS"></status>
-</kw>
-<kw type="kw" name="Winner Should Be">
-<doc></doc>
-<arguments>
-<arg>O</arg>
-</arguments>
-<kw type="kw" name="${result} = TicTacToeKeywords.Get Winner">
-<doc></doc>
-<arguments>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.271">${result} = O</msg>
-<status endtime="20140916 21:10:21.270" starttime="20140916 21:10:21.268" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${result}</arg>
-<arg>${winner}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.278">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.280" starttime="20140916 21:10:21.274" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.281" starttime="20140916 21:10:21.262" status="PASS"></status>
+<status endtime="20140917 18:43:15.920" starttime="20140917 18:43:15.906" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20140916 21:10:21.283" starttime="20140916 21:10:20.985" status="PASS"></status>
+<status critical="yes" endtime="20140917 18:43:15.923" starttime="20140917 18:43:15.897" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
-<test name="Force a Tie" id="s1-t3">
-<kw type="kw" name="TicTacToeKeywords.Start New Game">
+<test name="Win First Vertically as X" id="s1-t3">
+<kw type="kw" name="Start New Game">
 <doc></doc>
 <arguments>
 </arguments>
-<status endtime="20140916 21:10:21.301" starttime="20140916 21:10:21.297" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
+<kw type="kw" name="Start Application">
 <doc></doc>
 <arguments>
-<arg>1</arg>
-<arg>1</arg>
+<arg>edu.jsu.mcis.TicTacToeGame</arg>
 </arguments>
-<status endtime="20140916 21:10:21.316" starttime="20140916 21:10:21.303" status="PASS"></status>
+<msg level="FAIL" timestamp="20140917 18:43:15.944">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 18:43:15.946" starttime="20140917 18:43:15.942" status="FAIL"></status>
 </kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>1</arg>
-<arg>1</arg>
-<arg>X</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.334">${loc} = X</msg>
-<status endtime="20140916 21:10:21.333" starttime="20140916 21:10:21.326" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.342">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.344" starttime="20140916 21:10:21.336" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.346" starttime="20140916 21:10:21.319" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>0</arg>
-</arguments>
-<status endtime="20140916 21:10:21.358" starttime="20140916 21:10:21.350" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>0</arg>
-<arg>O</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.379">${loc} = O</msg>
-<status endtime="20140916 21:10:21.378" starttime="20140916 21:10:21.372" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.387">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.389" starttime="20140916 21:10:21.382" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.391" starttime="20140916 21:10:21.361" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>2</arg>
-<arg>0</arg>
-</arguments>
-<status endtime="20140916 21:10:21.405" starttime="20140916 21:10:21.397" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>2</arg>
-<arg>0</arg>
-<arg>X</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.420">${loc} = X</msg>
-<status endtime="20140916 21:10:21.419" starttime="20140916 21:10:21.413" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.426">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.427" starttime="20140916 21:10:21.422" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.429" starttime="20140916 21:10:21.408" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>2</arg>
-</arguments>
-<status endtime="20140916 21:10:21.433" starttime="20140916 21:10:21.430" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>2</arg>
-<arg>O</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.457">${loc} = O</msg>
-<status endtime="20140916 21:10:21.456" starttime="20140916 21:10:21.440" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.471">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.475" starttime="20140916 21:10:21.460" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.552" starttime="20140916 21:10:21.435" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>1</arg>
-</arguments>
-<status endtime="20140916 21:10:21.558" starttime="20140916 21:10:21.554" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>0</arg>
-<arg>1</arg>
-<arg>X</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.578">${loc} = X</msg>
-<status endtime="20140916 21:10:21.577" starttime="20140916 21:10:21.565" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.584">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.585" starttime="20140916 21:10:21.580" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.587" starttime="20140916 21:10:21.560" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>2</arg>
-<arg>1</arg>
-</arguments>
-<status endtime="20140916 21:10:21.592" starttime="20140916 21:10:21.589" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>2</arg>
-<arg>1</arg>
-<arg>O</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.611">${loc} = O</msg>
-<status endtime="20140916 21:10:21.610" starttime="20140916 21:10:21.605" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.617">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.618" starttime="20140916 21:10:21.613" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.620" starttime="20140916 21:10:21.597" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>1</arg>
-<arg>2</arg>
-</arguments>
-<status endtime="20140916 21:10:21.625" starttime="20140916 21:10:21.622" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>1</arg>
-<arg>2</arg>
-<arg>X</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.649">${loc} = X</msg>
-<status endtime="20140916 21:10:21.648" starttime="20140916 21:10:21.633" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.657">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.659" starttime="20140916 21:10:21.651" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.661" starttime="20140916 21:10:21.626" status="PASS"></status>
-</kw>
-<kw type="kw" name="TicTacToeKeywords.Mark Location">
-<doc></doc>
-<arguments>
-<arg>1</arg>
-<arg>0</arg>
-</arguments>
-<status endtime="20140916 21:10:21.673" starttime="20140916 21:10:21.670" status="PASS"></status>
-</kw>
-<kw type="kw" name="Check Location">
-<doc></doc>
-<arguments>
-<arg>1</arg>
-<arg>0</arg>
-<arg>O</arg>
-</arguments>
-<kw type="kw" name="${loc} = TicTacToeKeywords.Get Location">
-<doc></doc>
-<arguments>
-<arg>${row}</arg>
-<arg>${col}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.685">${loc} = O</msg>
-<status endtime="20140916 21:10:21.684" starttime="20140916 21:10:21.679" status="PASS"></status>
-</kw>
-<kw type="kw" name="BuiltIn.Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${loc}</arg>
-<arg>${mark}</arg>
-</arguments>
-<msg level="INFO" timestamp="20140916 21:10:21.692">Argument types are:
-&lt;type 'unicode'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status endtime="20140916 21:10:21.694" starttime="20140916 21:10:21.687" status="PASS"></status>
-</kw>
-<status endtime="20140916 21:10:21.696" starttime="20140916 21:10:21.674" status="PASS"></status>
+<status endtime="20140917 18:43:15.948" starttime="20140917 18:43:15.936" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20140916 21:10:21.699" starttime="20140916 21:10:21.287" status="PASS"></status>
+<status critical="yes" endtime="20140917 18:43:15.951" starttime="20140917 18:43:15.929" status="FAIL">No keyword with name 'Start Application' found.</status>
+</test>
+<test name="Win Second Vertically as X" id="s1-t4">
+<kw type="kw" name="Start New Game">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Start Application">
+<doc></doc>
+<arguments>
+<arg>edu.jsu.mcis.TicTacToeGame</arg>
+</arguments>
+<msg level="FAIL" timestamp="20140917 18:43:15.973">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 18:43:15.974" starttime="20140917 18:43:15.970" status="FAIL"></status>
+</kw>
+<status endtime="20140917 18:43:15.976" starttime="20140917 18:43:15.965" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20140917 18:43:15.980" starttime="20140917 18:43:15.956" status="FAIL">No keyword with name 'Start Application' found.</status>
+</test>
+<test name="Win Third Vertically as O" id="s1-t5">
+<kw type="kw" name="Start New Game">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Start Application">
+<doc></doc>
+<arguments>
+<arg>edu.jsu.mcis.TicTacToeGame</arg>
+</arguments>
+<msg level="FAIL" timestamp="20140917 18:43:16.003">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 18:43:16.005" starttime="20140917 18:43:16.000" status="FAIL"></status>
+</kw>
+<status endtime="20140917 18:43:16.008" starttime="20140917 18:43:15.994" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20140917 18:43:16.015" starttime="20140917 18:43:15.986" status="FAIL">No keyword with name 'Start Application' found.</status>
+</test>
+<test name="Win First Horizontally as X" id="s1-t6">
+<kw type="kw" name="Start New Game">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Start Application">
+<doc></doc>
+<arguments>
+<arg>edu.jsu.mcis.TicTacToeGame</arg>
+</arguments>
+<msg level="FAIL" timestamp="20140917 18:43:16.033">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 18:43:16.034" starttime="20140917 18:43:16.031" status="FAIL"></status>
+</kw>
+<status endtime="20140917 18:43:16.036" starttime="20140917 18:43:16.025" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20140917 18:43:16.039" starttime="20140917 18:43:16.020" status="FAIL">No keyword with name 'Start Application' found.</status>
+</test>
+<test name="Win Second Horizontally as O" id="s1-t7">
+<kw type="kw" name="Start New Game">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Start Application">
+<doc></doc>
+<arguments>
+<arg>edu.jsu.mcis.TicTacToeGame</arg>
+</arguments>
+<msg level="FAIL" timestamp="20140917 18:43:16.058">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 18:43:16.059" starttime="20140917 18:43:16.056" status="FAIL"></status>
+</kw>
+<status endtime="20140917 18:43:16.061" starttime="20140917 18:43:16.051" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20140917 18:43:16.064" starttime="20140917 18:43:16.045" status="FAIL">No keyword with name 'Start Application' found.</status>
+</test>
+<test name="Win Third Horizontally as O" id="s1-t8">
+<kw type="kw" name="Start New Game">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Start Application">
+<doc></doc>
+<arguments>
+<arg>edu.jsu.mcis.TicTacToeGame</arg>
+</arguments>
+<msg level="FAIL" timestamp="20140917 18:43:16.085">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 18:43:16.086" starttime="20140917 18:43:16.083" status="FAIL"></status>
+</kw>
+<status endtime="20140917 18:43:16.088" starttime="20140917 18:43:16.077" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20140917 18:43:16.091" starttime="20140917 18:43:16.070" status="FAIL">No keyword with name 'Start Application' found.</status>
+</test>
+<test name="Force a Tie" id="s1-t9">
+<kw type="kw" name="Start New Game">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Start Application">
+<doc></doc>
+<arguments>
+<arg>edu.jsu.mcis.TicTacToeGame</arg>
+</arguments>
+<msg level="FAIL" timestamp="20140917 18:43:16.128">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 18:43:16.129" starttime="20140917 18:43:16.118" status="FAIL"></status>
+</kw>
+<status endtime="20140917 18:43:16.132" starttime="20140917 18:43:16.107" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20140917 18:43:16.137" starttime="20140917 18:43:16.097" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status endtime="20140916 21:10:21.707" starttime="20140916 21:10:20.248" status="PASS"></status>
+<status endtime="20140917 18:43:16.150" starttime="20140917 18:43:15.084" status="FAIL"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0">Critical Tests</stat>
-<stat pass="3" fail="0">All Tests</stat>
+<stat pass="0" fail="9">Critical Tests</stat>
+<stat pass="0" fail="9">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" name="TicTacToeTests" id="s1">TicTacToeTests</stat>
+<stat pass="0" fail="9" name="TicTacToeGUITests" id="s1">TicTacToeGUITests</stat>
 </suite>
 </statistics>
 <errors>
+<msg level="ERROR" timestamp="20140917 18:43:15.849">Error in file 'C:\Users\Joshua\Documents\GitHub\jsu-mcis-cs310-tictactoe\TicTacToe\acceptance\TicTacToeGUITests.txt': Importing test library 'SwingLibrary' failed: ImportError: No module named SwingLibrary
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\robotframework\robotframework-2.8.5.jar\Lib\robot\libraries
+  C:\robotframework\robotframework-2.8.5.jar\Lib
+  C:\robotframework\Lib
+  __classpath__
+  __pyclasspath__/
+  .
+  C:\Users\Joshua\Documents\GitHub\jsu-mcis-cs310-tictactoe\TicTacToe\acceptance
+CLASSPATH:
+  .
+  ..\build\classes\main
+  C:\RobotFramework\robotframework-2.8.5.jar</msg>
 </errors>
 </robot>
