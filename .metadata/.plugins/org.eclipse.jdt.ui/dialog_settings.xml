@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="false" key="SortMembers.sort_all"/>
 	<item value="0" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
 	<section name="RefactoringWizard.preview">
 		<item value="600" key="width"/>
@@ -29,6 +30,7 @@
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
+		<item value="false" key="SortMembersMessageDialog.optionalDialog.id"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>

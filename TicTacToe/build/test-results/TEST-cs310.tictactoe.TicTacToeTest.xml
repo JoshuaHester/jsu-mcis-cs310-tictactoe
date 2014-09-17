@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cs310.tictactoe.TicTacToeTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2014-09-17T02:10:02" hostname="Joshua-HP" time="0.016">
+  <properties/>
+  <testcase name="testShouldNotBeAbleToOverwriteTics" classname="cs310.tictactoe.TicTacToeTest" time="0.008"/>
+  <testcase name="testPlayerShouldAlternateBetweenMoves" classname="cs310.tictactoe.TicTacToeTest" time="0.001"/>
+  <testcase name="testGameShouldBeLosable" classname="cs310.tictactoe.TicTacToeTest" time="0.0"/>
+  <testcase name="testShouldNotBeAbleToExceedBounds" classname="cs310.tictactoe.TicTacToeTest" time="0.0"/>
+  <testcase name="testGameCanReturnSymbol" classname="cs310.tictactoe.TicTacToeTest" time="0.0"/>
+  <testcase name="testPlacingTicShouldAddCorrectTicToLocation" classname="cs310.tictactoe.TicTacToeTest" time="0.001"/>
+  <testcase name="testNewGameShouldBeBlank" classname="cs310.tictactoe.TicTacToeTest" time="0.001"/>
+  <testcase name="testGameShouldBeWinable" classname="cs310.tictactoe.TicTacToeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
