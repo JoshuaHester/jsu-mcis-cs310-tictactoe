@@ -1,7 +1,9 @@
 import edu.jsu.mcis.TicTacToeGame.*;
+import javax.swing.*;
 
 public class TicTacToeKeywordsGUI {
 	private TicTacToe game = new TicTacToe();
+		
 	
 	public void startNewGame(){
 		game.newGame();

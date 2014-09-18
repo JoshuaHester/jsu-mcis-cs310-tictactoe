@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 2.8.5 (Jython 2.5.3 on java1.8.0_05)" generated="20140917 18:43:15.075">
+<robot generator="Robot 2.8.5 (Jython 2.5.3 on java1.8.0_05)" generated="20140917 19:31:26.667">
 <suite source="C:\Users\Joshua\Documents\GitHub\jsu-mcis-cs310-tictactoe\TicTacToe\acceptance\TicTacToeGUITests.txt" name="TicTacToeGUITests" id="s1">
 <test name="Win Main Diagonally as X" id="s1-t1">
 <kw type="kw" name="Start New Game">
@@ -11,15 +11,15 @@
 <arguments>
 <arg>edu.jsu.mcis.TicTacToeGame</arg>
 </arguments>
-<msg level="FAIL" timestamp="20140917 18:43:15.883">No keyword with name 'Start Application' found.</msg>
-<status endtime="20140917 18:43:15.884" starttime="20140917 18:43:15.879" status="FAIL"></status>
+<msg level="FAIL" timestamp="20140917 19:31:27.279">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 19:31:27.280" starttime="20140917 19:31:27.275" status="FAIL"></status>
 </kw>
-<status endtime="20140917 18:43:15.887" starttime="20140917 18:43:15.868" status="FAIL"></status>
+<status endtime="20140917 19:31:27.284" starttime="20140917 19:31:27.267" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20140917 18:43:15.890" starttime="20140917 18:43:15.859" status="FAIL">No keyword with name 'Start Application' found.</status>
+<status critical="yes" endtime="20140917 19:31:27.288" starttime="20140917 19:31:27.256" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
 <test name="Win Reverse Diagonally as O" id="s1-t2">
 <kw type="kw" name="Start New Game">
@@ -31,15 +31,15 @@
 <arguments>
 <arg>edu.jsu.mcis.TicTacToeGame</arg>
 </arguments>
-<msg level="FAIL" timestamp="20140917 18:43:15.917">No keyword with name 'Start Application' found.</msg>
-<status endtime="20140917 18:43:15.918" starttime="20140917 18:43:15.914" status="FAIL"></status>
+<msg level="FAIL" timestamp="20140917 19:31:27.315">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 19:31:27.317" starttime="20140917 19:31:27.312" status="FAIL"></status>
 </kw>
-<status endtime="20140917 18:43:15.920" starttime="20140917 18:43:15.906" status="FAIL"></status>
+<status endtime="20140917 19:31:27.324" starttime="20140917 19:31:27.306" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20140917 18:43:15.923" starttime="20140917 18:43:15.897" status="FAIL">No keyword with name 'Start Application' found.</status>
+<status critical="yes" endtime="20140917 19:31:27.328" starttime="20140917 19:31:27.297" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
 <test name="Win First Vertically as X" id="s1-t3">
 <kw type="kw" name="Start New Game">
@@ -51,15 +51,15 @@
 <arguments>
 <arg>edu.jsu.mcis.TicTacToeGame</arg>
 </arguments>
-<msg level="FAIL" timestamp="20140917 18:43:15.944">No keyword with name 'Start Application' found.</msg>
-<status endtime="20140917 18:43:15.946" starttime="20140917 18:43:15.942" status="FAIL"></status>
+<msg level="FAIL" timestamp="20140917 19:31:27.359">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 19:31:27.360" starttime="20140917 19:31:27.355" status="FAIL"></status>
 </kw>
-<status endtime="20140917 18:43:15.948" starttime="20140917 18:43:15.936" status="FAIL"></status>
+<status endtime="20140917 19:31:27.363" starttime="20140917 19:31:27.349" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20140917 18:43:15.951" starttime="20140917 18:43:15.929" status="FAIL">No keyword with name 'Start Application' found.</status>
+<status critical="yes" endtime="20140917 19:31:27.366" starttime="20140917 19:31:27.337" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
 <test name="Win Second Vertically as X" id="s1-t4">
 <kw type="kw" name="Start New Game">
@@ -71,15 +71,15 @@
 <arguments>
 <arg>edu.jsu.mcis.TicTacToeGame</arg>
 </arguments>
-<msg level="FAIL" timestamp="20140917 18:43:15.973">No keyword with name 'Start Application' found.</msg>
-<status endtime="20140917 18:43:15.974" starttime="20140917 18:43:15.970" status="FAIL"></status>
+<msg level="FAIL" timestamp="20140917 19:31:27.385">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 19:31:27.387" starttime="20140917 19:31:27.382" status="FAIL"></status>
 </kw>
-<status endtime="20140917 18:43:15.976" starttime="20140917 18:43:15.965" status="FAIL"></status>
+<status endtime="20140917 19:31:27.389" starttime="20140917 19:31:27.377" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20140917 18:43:15.980" starttime="20140917 18:43:15.956" status="FAIL">No keyword with name 'Start Application' found.</status>
+<status critical="yes" endtime="20140917 19:31:27.392" starttime="20140917 19:31:27.371" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
 <test name="Win Third Vertically as O" id="s1-t5">
 <kw type="kw" name="Start New Game">
@@ -91,15 +91,15 @@
 <arguments>
 <arg>edu.jsu.mcis.TicTacToeGame</arg>
 </arguments>
-<msg level="FAIL" timestamp="20140917 18:43:16.003">No keyword with name 'Start Application' found.</msg>
-<status endtime="20140917 18:43:16.005" starttime="20140917 18:43:16.000" status="FAIL"></status>
+<msg level="FAIL" timestamp="20140917 19:31:27.416">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 19:31:27.417" starttime="20140917 19:31:27.414" status="FAIL"></status>
 </kw>
-<status endtime="20140917 18:43:16.008" starttime="20140917 18:43:15.994" status="FAIL"></status>
+<status endtime="20140917 19:31:27.421" starttime="20140917 19:31:27.408" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20140917 18:43:16.015" starttime="20140917 18:43:15.986" status="FAIL">No keyword with name 'Start Application' found.</status>
+<status critical="yes" endtime="20140917 19:31:27.425" starttime="20140917 19:31:27.400" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
 <test name="Win First Horizontally as X" id="s1-t6">
 <kw type="kw" name="Start New Game">
@@ -111,15 +111,15 @@
 <arguments>
 <arg>edu.jsu.mcis.TicTacToeGame</arg>
 </arguments>
-<msg level="FAIL" timestamp="20140917 18:43:16.033">No keyword with name 'Start Application' found.</msg>
-<status endtime="20140917 18:43:16.034" starttime="20140917 18:43:16.031" status="FAIL"></status>
+<msg level="FAIL" timestamp="20140917 19:31:27.446">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 19:31:27.447" starttime="20140917 19:31:27.444" status="FAIL"></status>
 </kw>
-<status endtime="20140917 18:43:16.036" starttime="20140917 18:43:16.025" status="FAIL"></status>
+<status endtime="20140917 19:31:27.450" starttime="20140917 19:31:27.439" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20140917 18:43:16.039" starttime="20140917 18:43:16.020" status="FAIL">No keyword with name 'Start Application' found.</status>
+<status critical="yes" endtime="20140917 19:31:27.454" starttime="20140917 19:31:27.431" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
 <test name="Win Second Horizontally as O" id="s1-t7">
 <kw type="kw" name="Start New Game">
@@ -131,15 +131,15 @@
 <arguments>
 <arg>edu.jsu.mcis.TicTacToeGame</arg>
 </arguments>
-<msg level="FAIL" timestamp="20140917 18:43:16.058">No keyword with name 'Start Application' found.</msg>
-<status endtime="20140917 18:43:16.059" starttime="20140917 18:43:16.056" status="FAIL"></status>
+<msg level="FAIL" timestamp="20140917 19:31:27.475">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 19:31:27.476" starttime="20140917 19:31:27.472" status="FAIL"></status>
 </kw>
-<status endtime="20140917 18:43:16.061" starttime="20140917 18:43:16.051" status="FAIL"></status>
+<status endtime="20140917 19:31:27.478" starttime="20140917 19:31:27.467" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20140917 18:43:16.064" starttime="20140917 18:43:16.045" status="FAIL">No keyword with name 'Start Application' found.</status>
+<status critical="yes" endtime="20140917 19:31:27.480" starttime="20140917 19:31:27.461" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
 <test name="Win Third Horizontally as O" id="s1-t8">
 <kw type="kw" name="Start New Game">
@@ -151,15 +151,15 @@
 <arguments>
 <arg>edu.jsu.mcis.TicTacToeGame</arg>
 </arguments>
-<msg level="FAIL" timestamp="20140917 18:43:16.085">No keyword with name 'Start Application' found.</msg>
-<status endtime="20140917 18:43:16.086" starttime="20140917 18:43:16.083" status="FAIL"></status>
+<msg level="FAIL" timestamp="20140917 19:31:27.497">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 19:31:27.498" starttime="20140917 19:31:27.495" status="FAIL"></status>
 </kw>
-<status endtime="20140917 18:43:16.088" starttime="20140917 18:43:16.077" status="FAIL"></status>
+<status endtime="20140917 19:31:27.501" starttime="20140917 19:31:27.490" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20140917 18:43:16.091" starttime="20140917 18:43:16.070" status="FAIL">No keyword with name 'Start Application' found.</status>
+<status critical="yes" endtime="20140917 19:31:27.504" starttime="20140917 19:31:27.484" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
 <test name="Force a Tie" id="s1-t9">
 <kw type="kw" name="Start New Game">
@@ -171,20 +171,20 @@
 <arguments>
 <arg>edu.jsu.mcis.TicTacToeGame</arg>
 </arguments>
-<msg level="FAIL" timestamp="20140917 18:43:16.128">No keyword with name 'Start Application' found.</msg>
-<status endtime="20140917 18:43:16.129" starttime="20140917 18:43:16.118" status="FAIL"></status>
+<msg level="FAIL" timestamp="20140917 19:31:27.525">No keyword with name 'Start Application' found.</msg>
+<status endtime="20140917 19:31:27.525" starttime="20140917 19:31:27.521" status="FAIL"></status>
 </kw>
-<status endtime="20140917 18:43:16.132" starttime="20140917 18:43:16.107" status="FAIL"></status>
+<status endtime="20140917 19:31:27.527" starttime="20140917 19:31:27.514" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20140917 18:43:16.137" starttime="20140917 18:43:16.097" status="FAIL">No keyword with name 'Start Application' found.</status>
+<status critical="yes" endtime="20140917 19:31:27.530" starttime="20140917 19:31:27.509" status="FAIL">No keyword with name 'Start Application' found.</status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status endtime="20140917 18:43:16.150" starttime="20140917 18:43:15.084" status="FAIL"></status>
+<status endtime="20140917 19:31:27.544" starttime="20140917 19:31:26.676" status="FAIL"></status>
 </suite>
 <statistics>
 <total>
@@ -198,7 +198,7 @@
 </suite>
 </statistics>
 <errors>
-<msg level="ERROR" timestamp="20140917 18:43:15.849">Error in file 'C:\Users\Joshua\Documents\GitHub\jsu-mcis-cs310-tictactoe\TicTacToe\acceptance\TicTacToeGUITests.txt': Importing test library 'SwingLibrary' failed: ImportError: No module named SwingLibrary
+<msg level="ERROR" timestamp="20140917 19:31:27.242">Error in file 'C:\Users\Joshua\Documents\GitHub\jsu-mcis-cs310-tictactoe\TicTacToe\acceptance\TicTacToeGUITests.txt': Importing test library 'SwingLibrary' failed: ImportError: No module named SwingLibrary
 Traceback (most recent call last):
   None
 PYTHONPATH:

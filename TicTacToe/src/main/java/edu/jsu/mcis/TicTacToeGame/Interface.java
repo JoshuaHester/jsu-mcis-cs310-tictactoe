@@ -5,10 +5,10 @@ import javax.swing.*;
 
 public class Interface extends JPanel implements MouseListener{
 	public TicTacToe game;
-	private JLabel[][] gridSlot;
-	private JLabel message;
-	private TicTacToe.Player winner = null;
-	JFrame myFrame = new JFrame();
+	public JLabel[][] gridSlot;
+	public JLabel message;
+	public TicTacToe.Player winner = null;
+	public JFrame myFrame = new JFrame();
 	
 	public Interface(TicTacToe game){
 		this.game=game;

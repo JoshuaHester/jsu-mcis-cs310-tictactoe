@@ -145,5 +145,21 @@ public class TicTacToeTest extends TestCase {
 		testGame.markLocation(0,1,'X');
 		testGame.markLocation(0,2,'X');
 		assertSame(testGame.getWinnerSymbol(), "X");
+		testGame = new TicTacToe();
+		testGame.markLocation(0,0,'O');
+		testGame.markLocation(0,1,'O');
+		testGame.markLocation(0,2,'O');
+		assertSame(testGame.getWinnerSymbol(), "O");
+		testGame = new TicTacToe();
+		testGame.markLocation(0,0,'X');
+		testGame.markLocation(0,1,'O');
+		testGame.markLocation(0,2,'X');
+		testGame.markLocation(1,0,'X');
+		testGame.markLocation(1,1,'O');
+		testGame.markLocation(1,2,'X');
+		testGame.markLocation(2,0,'O');
+		testGame.markLocation(2,1,'X');
+		testGame.markLocation(2,2,'O');
+		assertSame(testGame.getWinnerSymbol(), "TIE");
 	}
 }

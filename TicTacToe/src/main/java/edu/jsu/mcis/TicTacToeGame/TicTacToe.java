@@ -73,7 +73,7 @@ public class TicTacToe {
 		else if(getGameWinner()==Player.PLAYER_2)
 			return "O";
 		else if(getGameWinner()==Player.CAT)
-			return "X";
+			return "TIE";
 		else return null;
 	}
 	
